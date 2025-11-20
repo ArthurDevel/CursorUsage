@@ -7,5 +7,6 @@ export default defineConfig({
   preview: {
     port: Number(process.env.PORT) || 4173,
     host: true, // Listen on all addresses
+    allowedHosts: 'all', // Allow all hosts (safe behind reverse proxy)
   },
 })
